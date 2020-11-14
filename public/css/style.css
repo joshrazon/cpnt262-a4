@@ -129,100 +129,9 @@ ul li:hover {
   min-height: 100%;
 }
 
-/* Group */
-.deck {
-  display: flex;
-  justify-content: space-between;
-  min-width: 80%;
-  height: 66vh;
-}
-
-.card-outer {
-  flex-basis: 31%;
-  display: flex;
-  flex-direction: column;
-  max-height: 100%;
-  border-radius: 4px;
-  box-shadow: 2px 2px 10px grey;
-  background-color: #F4F5F9;
-}
-
-.card {
-  flex-basis: 40%;
-  background-position: center;
-}
-
-.img1 {
-  background-image: url(./img/card1.jpg);
-}
-
-.img2{
-  background-image: url(./img/card2.jpg);
-}
-
-.img3{
-  background-image: url(./img/card3.jpg);
-}
-
-.card-text {
-  margin: 1em 0.8em;
-  max-width: 30ch;
-  font-size: 1.4rem;
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(36, 36, 36);
-}
-
-.card-text h3 {
-  color: rgb(212, 2, 2);
-} 
-
-.card-text p {
-  margin-top: 1em;
-  font-size: 1.2rem;
-}
-
 /* All btn */
 button {
   cursor: pointer;
-}
-
-/* Card btn */
-.card-btn {
-  align-self: center;
-}
-
-.card-btn button {
-  margin: 1em 0.8em;
-  border: 2px solid #08c738;
-  border-radius: 4px;
-  padding: .8em 1em;
-  background-color:  #08c738;
-  font-size: 1.2rem;
-  color: white;
-}
-
-/* Parallax */
-.parallax {
-  width: 100%;
-  height: 30vh;
-  background-image: 
-  linear-gradient(
-    180deg, 
-    rgba(0, 0, 0, 0.2), 
-    rgba(0, 0, 0, 0.2)
-    ), 
-  url(./img/hero-img2.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.parallax h1 {
-  font-family: 'Nova Square', cursive;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  color: white;
 }
 
 /* Experiences */
@@ -335,51 +244,7 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
-@media screen and (max-width: 1500px) {
-  .exp-text h2 {
-    font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
-    padding-top: 2em;
-  }
 
-  .exp-text p {
-    font-size: calc(14px + (19.2 - 14) * ((100vw - 320px) / (1500 - 320)));
-  }
-
-  .btn-dark, .btn-wht {
-    font-size: calc(18px + (27.2 - 18) * ((100vw - 320px) / (1500 - 320)));
-  }
-}
-
-@media screen and (max-width: 1320px) {
-  .exp-container-reverse, .exp-container {
-    display: flex;
-    max-width: 80%;
-    flex-direction: column-reverse;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  img {
-    width: 900px;
-  }
-
-  nav img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .exp-text {
-    width: 100%;
-  }
-
-  .exp-text p {
-    max-width: 76ch;
-  }
-}
-
-
-/* forms */
-/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -510,4 +375,46 @@ a:focus {
 
 a:hover {
   color: #00c220;
+}
+
+@media screen and (max-width: 1500px) {
+  .exp-text h2 {
+    font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
+    padding-top: 2em;
+  }
+
+  .exp-text p {
+    font-size: calc(14px + (19.2 - 14) * ((100vw - 320px) / (1500 - 320)));
+  }
+
+  .btn-dark, .btn-wht {
+    font-size: calc(18px + (27.2 - 18) * ((100vw - 320px) / (1500 - 320)));
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .exp-container-reverse, .exp-container {
+    display: flex;
+    max-width: 80%;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  img {
+    width: 900px;
+  }
+
+  nav img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .exp-text {
+    width: 100%;
+  }
+
+  .exp-text p {
+    max-width: 76ch;
+  }
 }
