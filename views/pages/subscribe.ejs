@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+    <%- include('../partials/nav'); %>
+
+    
+
+
+  <div class="hero">
+    <div class="flex-container">
+      <form action="#">
+        <fieldset>
+          <legend>Subscribe To Our <br> Newsletter!</legend>
+          <label for="password">Name*</label>
+          <input type="name" required placeholder="Enter your name" name="name" id="name">
+          
+          <label for="email">Email*</label>
+          <input type="email" required placeholder="Enter your email" name="email" id="email">
+          
+          <div class="check-container">
+            <input type="checkbox" name="promo" id="promo">
+            <label for="promo">I would like to recieve promotional emails</label>
+          </div>
+          <button type="submit">Sign-up</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
