@@ -1,4 +1,4 @@
-fetch('http://localhost:8080/api/v0/gallery')
+fetch(`${window.location.origin}/api/v0/gallery`)
 .then(response => response.json())
 .then(data => {
   const hikes = data;
