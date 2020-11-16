@@ -1,22 +1,19 @@
-import {hikes} from './hikes.js'
-
-console.log(hikes)
-
-// let outputHTML = "";
-
-// let gallery = document.querySelector('.gallery');
-
-
-// hikes.forEach(function(hike) {
-
-
-//   outputHTML += `
-//     <div class="card">
-//       <img src="./images/${hike.imagePath()}.jpg" height="${hike.height}" width="${hike.width}" alt="Lorem Picsum: ${animal.name}">
-//       <p>${hike.credit}</p>
-//     </div>
-//   `
-  
-//   gallery.innerHTML = outputHTML;
-// })
+fetch('http://localhost:8080/api/v0/gallery')
+.then(response => response.json())
+.then(data => {
+  const hikes = data;
+  return hikes
+}).then(hikes => {
+  const gallery = document.querySelector('.gallery');
+  let outputHTML = '';
+  hikes.forEach(function(hike) {
+    outputHTML += `
+    <figure class="card">
+    <img src="./images/gallery/hike${hike.id}.jpg" height="${hike.height}" width="${hike.width}" alt="${hike.title}"></img>
+      <figcaption>${hike.credit}</figcaption>
+    </figure>
+    `
+    gallery.innerHTML = outputHTML;
+  })
+});
 

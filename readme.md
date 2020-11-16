@@ -10,4 +10,4 @@ GH [Repo](https://github.com/joshrazon/cpnt262-a4)
 ## Attributions
 - all images were taken from [unsplash](https://unsplash.com/)
 
-- Worked with [Brett Searle](https://github.com/brettasearle) (debuging, code quality review and design feedback)
+- Worked with [Brett Searle](https://github.com/brettasearle) (debuging, code quality review and design feedback) 

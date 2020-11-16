@@ -1,29 +1,59 @@
-/* Resets */
-* {
+body {
   margin: 0;
   padding: 0;
 }
 
-/* Center the gallery */
-body {
+nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
 
-  background-image: linear-gradient( to top, #3498db, #2c3e50 60%);
+nav img {
+  margin-left: 3rem;
+}
+
+ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:rgb(236, 236, 236);
+  list-style-type: none;
+}
+
+ul li {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: #08c738;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+a:hover {
+  color: #00c220;
 }
 
 img {
-  /* make all image height equal to the shortest img  */
-  height: 197px;
-  width: 100%;
-  
   object-fit: cover;
 }
 
 .gallery {
-  margin-top: 25px;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -50,8 +80,6 @@ img {
 
 .card:hover {
   background-color: inherit;
-  
-  color: white;
  
   cursor: pointer;
  

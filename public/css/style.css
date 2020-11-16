@@ -377,6 +377,20 @@ a:hover {
   color: #00c220;
 }
 
+.card:hover {
+  background-color: inherit;
+  
+  color: white;
+ 
+  cursor: pointer;
+ 
+  transform: scale(1.1);
+}
+
+figcaption {
+  padding: 10px;
+}
+
 @media screen and (max-width: 1500px) {
   .exp-text h2 {
     font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
